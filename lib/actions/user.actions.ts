@@ -39,7 +39,7 @@ export const createAccount = async ({
   username,
   email,
 }: {
-  username: string;
+  username: string | undefined;
   email: string;
 }) => {
   const existingUser = await getUserByEmail(email);
